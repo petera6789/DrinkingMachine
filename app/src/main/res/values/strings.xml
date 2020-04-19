@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VendiMap</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">LOGIN</string>
+    <string name="registration">Registration</string>
+    <string name="all">All</string>
+    <string name="go">GO!</string>
+    <string name="logout">Logout</string>
+</resources>

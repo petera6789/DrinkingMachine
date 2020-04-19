@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "303610401302",
+    "firebase_url": "https://vending-machine-5ab23.firebaseio.com",
+    "project_id": "vending-machine-5ab23",
+    "storage_bucket": "vending-machine-5ab23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303610401302:android:65f45ca1205571d5c69b37",
+        "android_client_info": {
+          "package_name": "com.example.drinkingmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303610401302-mk3l6amlb2u11rdnp1sid9oec0e98hql.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drinkingmachine",
+            "certificate_hash": "aa62266bf9dbaf05b474bca4b1fd0500bdec299e"
+          }
+        },
+        {
+          "client_id": "303610401302-fmfpfb22uvgg93d37m9fq7t9mb1cscid.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drinkingmachine",
+            "certificate_hash": "cf97f6c4c64607e97b0bdadec0bd633ce9951afc"
+          }
+        },
+        {
+          "client_id": "303610401302-90234cl5u4leh9v04irg2q51aobvmrvm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drinkingmachine",
+            "certificate_hash": "8dcb3fd694affa1871846d8508a85f583d9bbaad"
+          }
+        },
+        {
+          "client_id": "303610401302-m7ih0ftelasimhl3kveskgrk9l8dtv90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.drinkingmachine",
+            "certificate_hash": "4a5e39539d9b5513345d520bdc96b3a2308b1b8a"
+          }
+        },
+        {
+          "client_id": "303610401302-5spch01cpujfsb716j2rg03vj046h55m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMK235QRsZbcbApmOeSLrfOD7nLz3fzAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303610401302-5spch01cpujfsb716j2rg03vj046h55m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303610401302:android:aefb2d17300e618dc69b37",
+        "android_client_info": {
+          "package_name": "com.example.drinkmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303610401302-5spch01cpujfsb716j2rg03vj046h55m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMK235QRsZbcbApmOeSLrfOD7nLz3fzAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303610401302-5spch01cpujfsb716j2rg03vj046h55m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

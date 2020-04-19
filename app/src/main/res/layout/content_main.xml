@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/LogButton"
+        android:layout_width="316dp"
+        android:layout_height="64dp"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        app:layout_constraintBottom_toTopOf="@+id/Reg_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/Reg_Button"
+        android:layout_width="316dp"
+        android:layout_height="64dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        android:text="@string/registration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/All"
+        app:layout_constraintVertical_bias="0.604" />
+
+    <Button
+        android:id="@+id/All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/reg_button"
+        android:text="@string/all"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sorting"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/LogButton"
+        app:layout_constraintEnd_toStartOf="@+id/go"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="39dp"
+        android:contentDescription="arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/sorting"
+        app:layout_constraintEnd_toEndOf="@+id/sorting"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sorting"
+        app:layout_constraintTop_toTopOf="@+id/sorting"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/go"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/All"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="104dp"
+        android:textColor="#71B3EC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="112dp"
+        android:text="@string/logout"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/logout_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

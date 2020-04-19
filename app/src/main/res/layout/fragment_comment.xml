@@ -1,0 +1,154 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3BFAEE88"
+    tools:context="com.example.drinkmachine.comment">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="9dp"
+        android:src="@drawable/usericon"
+        app:layout_constraintEnd_toStartOf="@+id/Comname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Comname"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:text="Please login to update the machine information"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/DrinkSpinner"
+        android:layout_width="334dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="71dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/PaySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Comname" />
+
+    <Spinner
+        android:id="@+id/PaySpinner"
+        android:layout_width="285dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="231dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkSpinner" />
+
+    <Spinner
+        android:id="@+id/DrinkSpinnerValid"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="77dp"
+        android:background="@android:drawable/spinner_background"
+        app:layout_constraintBottom_toTopOf="@+id/PaySpinnerValid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Comname" />
+
+    <Spinner
+        android:id="@+id/PaySpinnerValid"
+        android:layout_width="55dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="231dp"
+        android:background="@android:drawable/spinner_background"
+        android:popupBackground="@android:drawable/spinner_dropdown_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkSpinnerValid" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:text="Drinks:"
+        app:layout_constraintBottom_toTopOf="@+id/DrinkSpinner"
+        app:layout_constraintStart_toStartOf="@+id/DrinkSpinner" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="Payments:"
+        app:layout_constraintBottom_toTopOf="@+id/PaySpinner"
+        app:layout_constraintStart_toStartOf="@+id/PaySpinner" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:text="Have:"
+        app:layout_constraintBottom_toTopOf="@+id/DrinkSpinnerValid"
+        app:layout_constraintStart_toStartOf="@+id/DrinkSpinnerValid" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:text="Valid:"
+        app:layout_constraintBottom_toTopOf="@+id/PaySpinnerValid"
+        app:layout_constraintEnd_toEndOf="@+id/PaySpinnerValid" />
+
+    <Button
+        android:id="@+id/Submit1"
+        android:layout_width="77dp"
+        android:layout_height="38dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        android:enabled="false"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/PaySpinnerValid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DrinkSpinnerValid"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <Button
+        android:id="@+id/Submit2"
+        android:layout_width="77dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="128dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button"
+        android:enabled="false"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Submit1"
+        app:layout_constraintVertical_bias="0.006" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
