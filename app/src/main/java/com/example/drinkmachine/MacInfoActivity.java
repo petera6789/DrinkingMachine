@@ -75,5 +75,6 @@ public class MacInfoActivity extends AppCompatActivity {
         });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tablayout));
     }
+
 }
 
