@@ -7,4 +7,19 @@
     <string name="all">All</string>
     <string name="go">GO!</string>
     <string name="logout">Logout</string>
+    <string name="linktosite">
+        <a href="https://www.instagram.com/hiuchiko/">Hugh</a>
+    </string>
+    <string name="linktosite2">
+        <a href="https://www.instagram.com/ccccmtt__4">CMT</a>
+    </string>
+    <string name="linktosite3">
+        <a href="https://www.instagram.com/">Jerome</a>
+    </string>
+    <string name="linktosite4">
+        <a href="https://www.instagram.com/kayukkkkk/">Kayuk</a>
+    </string>
+    <string name="linktosite5">
+        <a href="https://www.instagram.com/sillagezzz">Sillage</a>
+    </string>
 </resources>

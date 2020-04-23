@@ -20,6 +20,11 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    public void toAboutUs(View view){
+        startActivity(new Intent(this,AboutUs.class));//start Activity via intent
+    }
+
     DatabaseReference Machine;
     int maxid;
     Spinner sort;
@@ -158,3 +163,5 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
+
