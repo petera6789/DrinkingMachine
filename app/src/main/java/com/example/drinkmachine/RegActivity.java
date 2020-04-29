@@ -29,6 +29,7 @@ public class RegActivity extends AppCompatActivity {
     DatabaseReference UserInfo;
     String Username;
     ArrayList<String> AcList = new ArrayList<String>();
+    boolean lock = false;
     long maxid;
     private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^"+"(?=.*[0-9])"+"(?=.*[a-z])"+"(?=.*[A-Z])"+"(?=\\S+$)"+".{5,14}"+"$");
@@ -68,6 +69,10 @@ public class RegActivity extends AppCompatActivity {
                     if(nameT.equals(AcList.get(i))){
                         UserName.setError("The user name has been used");
                         UserName.requestFocus();
+                        lock = false;
+                    }
+                    else {
+                        lock = true ;
                     }
                 }
 
@@ -93,17 +98,18 @@ public class RegActivity extends AppCompatActivity {
                 else if(!PASSWORD_PATTERN.matcher(pwT).matches()){
                         Pw.setError("This password too weak,\nAt least 1 Digit, 1 Lower and Upper case letter!");
                         Pw.requestFocus();
-                    }
-
+                }
                 else if (!(pwT.equals(pwT2))){
                     Toast.makeText(RegActivity.this,"Password are not same",Toast.LENGTH_LONG).show();
                 }
                 else {
-                    register.setUserName(UserName.getText().toString());
-                    register.setPassword(Pw.getText().toString());
-                    Reg.child(String.valueOf(maxid + 1)).setValue(register);
-                    Toast.makeText(RegActivity.this,"Sign up successful",Toast.LENGTH_LONG).show();
-                    finish();
+                    if (lock){
+                        register.setUserName(UserName.getText().toString());
+                        register.setPassword(Pw.getText().toString());
+                        Reg.child(String.valueOf(maxid + 1)).setValue(register);
+                        Toast.makeText(RegActivity.this, "Sign up successful", Toast.LENGTH_LONG).show();
+                        finish();
+                    }
                 }
             }
         });
